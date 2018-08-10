@@ -16,6 +16,16 @@ namespace notasMB
             public string valor;
             public string desc;
 
+            public List<string> GeraID()
+            {
+                List<string> idnotas = new List<string>();
+                for (int i =0; i <3000;i++)
+                {
+                    idnotas.Add("nota:" + i);
+                }
+                return idnotas;
+            }
+
             public void Adicionar()
             {
 
@@ -24,6 +34,11 @@ namespace notasMB
             public void Excluir()
             {
 
+            }
+
+            public void Pesquisar()
+            {
+                
             }
         }
 
