@@ -24,7 +24,7 @@
             <br />
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnIncluir" runat="server" Text="Incluir" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnExcluir" runat="server" Text="Exluir" />
+            <asp:Button ID="btnIncluir" runat="server" Text="Incluir" OnClick="btnIncluir_Click" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnExcluir" runat="server" Text="Exluir" style="width: 49px" />
         </div>
     </form>
 </body>
