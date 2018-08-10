@@ -23,8 +23,10 @@
             <asp:Label ID="desc" runat="server" Text="Descrição do serviço prestado: "></asp:Label><asp:TextBox ID="txtdesc" runat="server"></asp:TextBox>
             <br />
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnIncluir" runat="server" Text="Incluir" OnClick="btnIncluir_Click" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Button ID="btnExcluir" runat="server" Text="Exluir" style="width: 49px" />
+            &nbsp;&nbsp;&nbsp;<asp:Button ID="btnIncluir" runat="server" Text="Incluir" OnClick="btnIncluir_Click" style="height: 26px; width: 50px" /> &nbsp;&nbsp;<asp:Button ID="btnExcluir" runat="server" Text="Exluir" style="width: 49px" />
+            &nbsp;&nbsp;<asp:Button ID="btnConsultar" runat="server" Text="Consultar" />
+            &nbsp; <asp:Button ID="btnAtualizar" runat="server" Text="Atualizar" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
         </div>
     </form>
 </body>

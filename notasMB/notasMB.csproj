@@ -75,6 +75,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\data.mdf" />
+    <Content Include="App_Data\data_log.ldf">
+      <DependentUpon>data.mdf</DependentUpon>
+    </Content>
     <Content Include="notasMB.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
