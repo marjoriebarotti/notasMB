@@ -15,41 +15,51 @@ namespace notasMB
             public string data;
             public string valor;
             public string desc;
+        }       
 
-            public List<string> GeraID()
-            {
-                List<string> idnotas = new List<string>();
-                for (int i =0; i <3000;i++)
-                {
-                    idnotas.Add("nota:" + i);
-                }
-                return idnotas;
-            }
-
-            public void Adicionar()
-            {
-
-            }
-
-            public void Excluir()
-            {
-
-            }
-
-            public void Pesquisar()
-            {
-                
-            }
-        }
-
-        protected void btnIncluir_Click(object sender, EventArgs e)
+        //adicionar nota
+        public void Adicionar()
         {
-            Notas n = new Notas();
+            List<Notas> lista = new List<Notas>();
 
+            Notas n = new Notas();
             n.id = txtid.Text;
             n.data = txtdata.Text;
             n.valor = txtvalor.Text;
             n.desc = txtdesc.Text;
+
+            bool contem = lista.Contains(id.Text);//verifica se a nota contem na lista
+
+            if(contem)
+            {
+                Response.Write("<script>alert('Essa nota já foi cadastrada anteriormente.');</script>");
+            }
+            else
+            {
+                lista.Add(n);
+                Limpar();
+                Response.Write("<script>alert('Sua nota foi cadastrada com sucesso');</script>");                
+            }   
+        }
+
+        //excluir nota
+        public void Excluir()
+        {            
+        }
+
+        //pesquisar nota
+        public void Pesquisar()
+        {                        
+        }
+
+        //editar nota
+        public void Editar()
+        {
+        }
+
+        protected void btnIncluir_Click(object sender, EventArgs e)
+        {
+            Adicionar();
         }
 
         //limpar os campos
@@ -60,5 +70,12 @@ namespace notasMB
             txtvalor.Text = "";
             txtdesc.Text = "";
         }
+
+
+
+
+
+
+
     }
 }
